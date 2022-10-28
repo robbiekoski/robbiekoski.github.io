@@ -13,11 +13,12 @@ menu:
 - {name: 'Learning Resources', url: 'resources'}
 - {name: 'Sample Posts',       url: 'sample-posts'}
 - {name: 'About',              url: 'about'}
+
+resume:
 - {name: 'Resume',             url: 'resume'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
-- {name: 'Resume',            link:  'https://robbiekoski.github.io/resume/'}
 - {icon: 'twitter',           link:  'https://twitter.com/paululele'}
 - {icon: 'facebook',          link:  'https://www.facebook.com/paululele'}
 - {icon: 'instagram',         link:  'https://instagram.com/paululele'}
