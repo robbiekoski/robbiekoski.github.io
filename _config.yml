@@ -1,6 +1,6 @@
 remote_theme: just-the-docs/just-the-docs
 
-title: Robbie's Docs
+title: Docs | Robbie Koski
 description: A documentation website
 url: "https://robbiekoski.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -68,7 +68,7 @@ aux_links:
     - "//robbiekoski.github.io/resume"
 
 # Makes Aux links open in a new tab. Default is false
-aux_links_new_tab: false
+aux_links_new_tab: true
 
 # Footer content
 # appears at the bottom of every page's main content
