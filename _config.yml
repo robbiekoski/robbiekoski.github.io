@@ -1,6 +1,6 @@
 remote_theme: just-the-docs/just-the-docs
 
-title: Docs | Robbie Koski
+title: Robbie Koski
 description: A documentation website
 url: "https://robbiekoski.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -64,6 +64,10 @@ heading_anchors: true
 
 # Aux links for the upper right navigation
 aux_links:
+  "LinkedIn":
+    - "//www.linkedin.com/in/robbiekoski"
+  "GitHub":
+    - "github.com/robbiekoski"
   "Resume":
     - "//robbiekoski.github.io/resume"
 
