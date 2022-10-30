@@ -22,7 +22,7 @@ Unraid is an all-in-one solution to creating a well-rounded home server. It allo
 
 ---
 
-## Array Setup
+### Array Setup
 Inside of my array setup I currently have `1 4TB data disk`, `1 4TB parity disk`, and `1 500GB SSD cache disk`. With this setup (1 data drive and 1 parity drive), I have 4TB of usable space with the ability to recover all data in the event of 1 drive failure. The cache drive is extremely useful in providing fast initial read/write speeds when copying data to shares. Data is first copied onto the cache disk drive utilizing its fast performance and then moved to the parity-protected data disks overnight automatically with the help of the mover utility. In the future I plan on adding one more data drive, however, for now this is plenty of space for my media shares.
 
 
