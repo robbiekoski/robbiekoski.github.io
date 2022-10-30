@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Overview
+title: pfSense
 parent: Homelab
 ---
 
-# Overview
+# pfSense
 {: .no_toc }
 
 ## Table of contents
@@ -22,17 +22,3 @@ When I started planning for my home network I knew that I wanted to incorporate 
 
 ### Network Layout
 The Qotom Mini PC that I use to run my pfSense setup has a total of 4 NIC ports that allows me to create 3 separate LAN interfaces (because 1 port is always used for WAN uplink). My network is segmented into two interfaces because I want to be able to control how home and guest devices communicate with my homelab services. The first interface, simply called `LAB`, is reserved only for devices within my homelab including my main computer, Raspberry Pi projects, and Unraid server along with all of its services. The second interface is called `GUEST` and it is used for all other Wi-Fi and IoT devices around the house such as phones, tablets, laptops, smart TVs, etc.
-
-
----
-
-## Unraid
-
-
-### Background
-Before I eventually decided to use [Unraid](https://unraid.net/), I was running Proxmox to create and manage my virtual machines and containers. It was very helpful in initially learning the basics of virtualization, however, I felt myself wanting more. In addition, knowing that I wanted to build myself a NAS in the near future is what unlitatmely led me to try Unraid. So I took advantage of their 30-day free trial, loaded the OS onto a flash drive, and quickly fell in love with the simplicity and level of customizability that the Unraid UI offers.
-
-Unraid is an all-in-one solution to creating a well-rounded home server. It allows me to easily add storage with many forms of redunancy to choose from, setup user shares, create virtual machines, run docker containers and more. Some services/applications that I am currently running are Heimdall, Nginx Proxy Manager, Authelia, and Home Assistant.
-
----
-
