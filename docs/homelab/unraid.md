@@ -36,6 +36,6 @@ Inside of my array setup I currently have `1 4TB data disk`, `1 4TB parity disk`
 
 ## Screenshots
 
-<img src="/assets/images/unraid_dash.png" alt="Unraid Dashboard Page"> <img src="/assets/images/unraid_main_edited.png" alt="Unraid Main Page"> 
+<img src="/assets/images/unraid_dash.png" class="code-example" alt="Unraid Dashboard Page"> <img src="/assets/images/unraid_main_edited.png" alt="Unraid Main Page"> 
 
 ---

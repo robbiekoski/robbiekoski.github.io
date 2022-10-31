@@ -15,4 +15,4 @@ parent: Homelab
 
 ---
 
-## Why I use it
+## Purpose
