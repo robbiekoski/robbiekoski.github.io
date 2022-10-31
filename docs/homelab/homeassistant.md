@@ -2,6 +2,7 @@
 layout: default
 title: Home Assistant
 parent: Homelab
+nav_order: 6
 ---
 
 # Home Assistant

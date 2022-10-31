@@ -2,6 +2,7 @@
 layout: default
 title: pfSense
 parent: Homelab
+nav_order: 2
 ---
 
 # pfSense

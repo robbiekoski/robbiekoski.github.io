@@ -2,6 +2,7 @@
 layout: default
 title: Unraid
 parent: Homelab
+nav_order: 1
 ---
 
 # Unraid
@@ -36,8 +37,6 @@ Inside of my array setup I currently have `1 4TB data disk`, `1 4TB parity disk`
 
 ## Screenshots
 <div class="code-example">
-<img src="/assets/images/unraid_dash.png"  alt="Unraid Dashboard Page"> 
+<img src="/assets/images/unraid_dash.png" alt="Unraid Dashboard Page"> 
 <img src="/assets/images/unraid_main_edited.png" alt="Unraid Main Page">
 </div>
-
----

@@ -2,6 +2,7 @@
 layout: default
 title: Nginx Proxy Manager
 parent: Homelab
+nav_order: 4
 ---
 
 # Nginx Proxy Manager
