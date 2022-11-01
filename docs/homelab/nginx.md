@@ -36,7 +36,7 @@ A few things you will need for this configuration:
   <img src="/assets/images/nginx_googlenameservers.png" alt="Google Domain Nameservers">
 
 ### Step 2: Setup A and CNAME records within Cloudflare DNS
-1. Create an `A record` that will direct traffic to your local Nginx Proxy Manager. The `Name` should consist of your domain name and top-level domain, and the `Content` should consist of the local IP address that is hosting Nginx Proxy Manager. For example:
+1. Create an **A record** that will direct traffic to your local Nginx Proxy Manager. The `Name` should consist of your domain name and top-level domain, and the `Content` should consist of the local IP address that is hosting Nginx Proxy Manager. For example:
   <img src="/assets/images/nginx_arecords.png" alt="Cloudflare A Records">
-2. Then, create a `CNAME record` for each service you want to create a subdomain for. The `Name` should consist of the subdomain name (service name) and the `Content` should consist of your domain name and top-level domain. For example:
+2. Then, create a **CNAME record** for each service you want to create a subdomain for. The `Name` should consist of the service name and the `Content` should consist of your domain name and top-level domain. For example:
   <img src="/assets/images/nginx_cnamerecords.png" alt="Cloudflare CNAME Records">
