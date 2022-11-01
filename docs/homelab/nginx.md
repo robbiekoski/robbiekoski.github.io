@@ -51,14 +51,27 @@ A few things you will need for this configuration:
   EXAMPLE: *.yourdomain.org
   ```
 4. Enter your email address and enable `Use a DNS Challenge`
-5. Click save
+5. `Save` your certificate
 
-### Step 3: Create a Proxy Host within Nginx Proxy Manager
-1. Create a **Proxy Host** that will direct the subdomain to the appropriate service. For example:
-  - `Domain Names` - service.yourdomain.org
+### Step 4: Create a Proxy Host within Nginx Proxy Manager
+1. Create a **Proxy Host** that will direct the subdomain to the appropriate service, enable SSL   For example:
+{: .warning }
+Some services, such as Heimdall, may require custom nginx configuration.
+  - `Domain Names` - the full domain name including subdomain for the server (created in step 3b)
   - `Scheme` - https
   - `Forward IP` - the ip address of your heimdall
   - `Forward Port` - the port of your heimdall
   - Select your `SSL Certificate` using Let's Encrypt
   - Enable `Force SSL`
   - Enable `HTTP/2 Support`
+  - Under `Advanced`, enter this into the Custom Nginx Configuration:
+    ```
+    location / {
+    proxy_set_header Host $host;
+    proxy_set_header X-Forwarded-Scheme $scheme;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_set_header X-Forwarded-For $remote_addr;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_pass $forward_scheme://$server:$port$request_uri;
+    }
+    ```
