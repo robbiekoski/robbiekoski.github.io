@@ -25,27 +25,18 @@ I am currently using [Nginx Proxy Manager](https://nginxproxymanager.com/guide/)
 ### Requirements
 
 A few things you will need for this configuration:
-- Public domain
+- Public domain name
 - Cloudflare account
 - Nginx Proxy Manager
 
 ### Step 1: Set your domain to use Cloudflare nameservers
 1. View your assigned Cloudflare nameservers inside the `DNS` tab of your domain.
-  <img src="/assets/images/nginx_cloudflarenameservers.png" alt="Cloudflare Nameservers"> 
+  <img src="/assets/images/nginx_cloudflarenameservers.png" alt="Cloudflare Nameservers">
 2. Set your custom nameservers within your domain provider. For example, within Google Domains:
   <img src="/assets/images/nginx_googlenameservers.png" alt="Google Domain Nameservers">
 
 ### Step 2: Setup A and CNAME records within Cloudflare DNS
-1. Create an `A record` with the name of your domain and content of the Nginx IP Address. It should look like this:
-  | Type    | Name              | Content                   | Proxy Status    |
-  |:--------|:------------------|:--------------------------|:----------------|
-  | A       | yourdomain.org    | Local Nginx IP Address    | DNS only        |
-  | A       | www               | Local Nginx IP Address    | DNS only        |
-2. Then, create a `CNAME record` for each service
-  | Type    | Name         | Content           | Proxy Status    |
-  |:--------|:-------------|:------------------|:----------------|
-  | CNAME   | unraid       | yourdomain.org    | DNS only        |
-  | CNAME   | pfsense      | yourdomain.org    | DNS only        | 
-  | CNAME   | authelia     | yourdomain.org    | DNS only        |
-
-
+1. Create an `A record` that will direct traffic to your local Nginx Proxy Manager. The `Name` should consist of your domain name and top-level domain, and the `Content` should consist of the local IP address that is hosting Nginx Proxy Manager. For example:
+  <img src="/assets/images/nginx_arecords.png" alt="Cloudflare A Records">
+2. Then, create a `CNAME record` for each service you want to create a subdomain for. The `Name` should consist of the subdomain name (service name) and the `Content` should consist of your domain name and top-level domain. For example:
+  <img src="/assets/images/nginx_cnamerecords.png" alt="Cloudflare CNAME Records">
