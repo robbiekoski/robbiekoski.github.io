@@ -54,9 +54,9 @@ A few things you will need for this configuration:
 5. `Save` your certificate
 
 ### Step 4: Create a Proxy Host within Nginx Proxy Manager
-1. Create a **Proxy Host** that will direct the subdomain to the appropriate service, enable SSL   For example:
 {: .warning }
 Some services, such as Heimdall, may require custom nginx configuration.
+1. Create a **Proxy Host** that will direct the subdomain to the appropriate service, enable SSL   For example:
   - `Domain Names` - the full domain name including subdomain for the server (created in step 3b)
   - `Scheme` - https
   - `Forward IP` - the ip address of your heimdall
