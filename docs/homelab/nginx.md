@@ -79,7 +79,7 @@ Some services, such as Heimdall, may require custom configuration that can be en
   - Select your Let's Encrypt `SSL Certificate`
   - Enable `Force SSL`
   - Enable `HTTP/2 Support`
-  - Under `Advanced`, enter this into the Custom Nginx Configuration:
+  - Under `Advanced`, enter the following into the Custom Nginx Configuration:
     ```
     location / {
     proxy_set_header Host $host;
@@ -93,3 +93,8 @@ Some services, such as Heimdall, may require custom configuration that can be en
 2. Test your new subdomain to see if it redirects you to the correct ip address and port number. If you receive an error, such as a 500 Internal Server Error, the problem may be:
   - Some services don't work well with HTTPS, try disabling SSL Certificates
   - If you haven't already, enable Websockets Support
+
+---
+
+## Screenshots
+
