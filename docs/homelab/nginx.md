@@ -46,16 +46,16 @@ A few things you will need for this configuration:
 ### Step 3: Create a wildcard SSL certificate using Let's Encrypt
 1. Inside of Nginx Proxy Manager, go to the SSL Certificates tab
 2. Click on `Add SSL Certificate`, then select `Let's Encrypt`
-3. Under Domain Names, enter in your domain name with a wildcard (*) as the subdomain
-  #### Example
-  {: .no_toc }
+3. Under Domain Names, enter in your domain name with a wildcard (*) as the subdomain:
   ```
-  *.yourdomain.org
+  EXAMPLE: *.yourdomain.org
   ```
+4. Enter your email address and enable `Use a DNS Challenge`
+5. Click save
 
 ### Step 3: Create a Proxy Host within Nginx Proxy Manager
-1. Create a **Proxy Host** that will direct the subdomain to the appropriate service. For example, this is the proxy host configuration for heimdall:
-  - `Domain Names` - heimdall.yourdomain.org
+1. Create a **Proxy Host** that will direct the subdomain to the appropriate service. For example:
+  - `Domain Names` - service.yourdomain.org
   - `Scheme` - https
   - `Forward IP` - the ip address of your heimdall
   - `Forward Port` - the port of your heimdall
