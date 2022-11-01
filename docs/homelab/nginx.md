@@ -87,6 +87,7 @@ Some services, such as Heimdall, may require custom configuration that can be en
     }
     ```
 2. Test your new subdomain to see if it redirects you to the correct ip address and port number. 
+
   {: .warning }
   If you receive an error, such as a 500 Internal Server Error, the problem may be:
 
