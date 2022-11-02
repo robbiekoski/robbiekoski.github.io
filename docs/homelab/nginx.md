@@ -98,3 +98,6 @@ Some services, such as Heimdall, may require custom configuration that can be en
 
 ## Screenshots
 
+<div class="code-example">
+<img src="/assets/images/nginx_proxyhosts.png" alt="Nginx Proxy Hosts Page"> 
+</div>
