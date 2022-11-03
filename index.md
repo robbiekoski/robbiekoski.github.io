@@ -19,7 +19,7 @@ This project is hosted on my GitHub and serves as the home for all documenation 
 
 ### Authelia
 
-I use [Authelia](https://www.authelia.com/) to provide SSO authentication and authorization for my self-hosted web services that don't offer native web authentication. My Authelia is currently setup to only ask for a username and password. However, it also has the ability to incorporate Multi-factor Authentication (MFA) methods such as security keys, time-based one-time passwords, and mobile push notifications. For more information about how it works and how to configure your own Authelia using Unraid visit the full [page]({{ site.baseurl }}{% link Authelia.md %}).
+I use [Authelia](https://www.authelia.com/) to provide SSO authentication and authorization for my self-hosted web services that don't offer native web authentication. My Authelia is currently setup to only ask for a username and password. However, it also has the ability to incorporate Multi-factor Authentication (MFA) methods such as security keys, time-based one-time passwords, and mobile push notifications. For more information about how it works and how to configure your own Authelia using Unraid visit the full [page]({{ site.baseurl }}{% link authelia.md %}).
 
 ---
 
