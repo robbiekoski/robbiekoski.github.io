@@ -22,7 +22,7 @@ I use [Authelia](https://www.authelia.com/) to provide SSO authentication and au
 
 Authelia works by sitting between Nginx Proxy Manager (NPM) and the web services themselves. Before NPM forwards my session to its destination address and port, it will first redirect me to the Authelia sign-on. After I have successfully authenticated, it will authorize me by redirecting me back to the original 
 
-
+---
 
 ## Screenshots
 
