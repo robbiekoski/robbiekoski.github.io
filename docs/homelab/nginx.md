@@ -18,9 +18,9 @@ nav_order: 4
 
 ## Details
 
-I am currently using [Nginx Proxy Manager](https://nginxproxymanager.com/guide/), with the help of Cloudfare's free DNS services, to help redirect my public domain name to my internal services on my network. By doing this, I can also utilize Let's Encrypt within Nginx to enable SSL encryption while accessing my services. Because my network is not exposed to the internet, this was more of a convenience project for me because now I don't have to remember the ip address and port numbers for each service. Also having SSL certificates on your local services is kinda cool.
+I am currently using [Nginx Proxy Manager](https://nginxproxymanager.com/guide/), with the help of Cloudfare's free DNS services, to help forward my public domain name to my internal services on my network. By doing this, I can also utilize Let's Encrypt within Nginx to enable SSL encryption while accessing my services. Because my network is not exposed to the internet, this was more of a convenience project for me because now I don't have to remember the ip address and port numbers for each service. Also having SSL certificates on your local services is kinda cool.
 
-As mentioned above, this setup only works when connected to my local network because my domain name redirects to a private ip address (my nginx proxy manager). Anyone who tries to access my domain outside of my network will receive a time out error because they will be connecting to an ip address that doesn't exist on their network. 
+As mentioned above, this setup only works when connected to my local network because my domain name forwards to a private ip address (my nginx proxy manager). Anyone who tries to access my domain outside of my network will receive a time out error because they will be connecting to an ip address that doesn't exist on their network. 
 
 ---
 
@@ -28,9 +28,9 @@ As mentioned above, this setup only works when connected to my local network bec
 
 When you try to access a specified subdomain within your network, for example `heimdall.yourdomain.org`, your browser will:
   1. Contact the nameservers used by your domain (Cloudflare)
-  2. Cloudflare DNS will redirect you to your local Nginx Proxy Manager
+  2. Cloudflare DNS will forward you to your local Nginx Proxy Manager
   3. Nginx Proxy Manager will see the source address (heimdall.yourdomain.org) and check the configured proxy hosts
-  4. If a valid proxy host is configured, Nginx Proxy Manager will redirect you to the destination ip address and port with an HTTPS connection if enabled 
+  4. If a valid proxy host is configured, Nginx Proxy Manager will forward you to the destination ip address and port with an HTTPS connection if enabled 
 
 ---
 
@@ -90,7 +90,7 @@ Some services, such as Heimdall, may require custom configuration that can be en
     proxy_pass $forward_scheme://$server:$port$request_uri;
     }
     ```
-2. Test your new subdomain to see if it redirects you to the correct ip address and port number. If you receive an error, such as a 500 Internal Server Error, the problem may be:
+2. Test your new subdomain to see if it forwards you to the correct ip address and port number. If you receive an error, such as a 500 Internal Server Error, the problem may be:
   - Some services don't work well with HTTPS, try disabling SSL Certificates
   - If you haven't already, enable Websockets Support
 
