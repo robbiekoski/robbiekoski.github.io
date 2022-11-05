@@ -26,13 +26,13 @@ The biggest problem with smart home products nowadays is the fact that most bran
 
 ## Integrations and Add-ons
 
-As mentioned above, [integrations](https://www.home-assistant.io/integrations/) within Home Assistant are created and updated by the community. This allows for device brands such as Ikea TRADFRI, Phillips Hue, and Sonoff to be natively paired with Home Assistant without the use of a hub. Simplifying the amount of hubs in your smart home network will help reduce the points of failure and headache when something inevitably goes wrong. The Add-on Store takes advantage of Home Assistant running as a virtual machine to provide users with the ability to install many optional services such as Samba file server, Node-RED, Let's Encrypt, and more. 
+As mentioned above, [integrations](https://www.home-assistant.io/integrations/) within Home Assistant are created and updated by the community. This allows for device brands such as Ikea TRADFRI, Phillips Hue, Sonoff and many more to be natively paired with Home Assistant without the use of a hub. Simplifying the amount of hubs in your smart home network will help reduce the points of failure and headache when something inevitably goes wrong. The Add-on Store takes advantage of Home Assistant running as a virtual machine to provide users with the ability to install many optional services such as Samba file server, Node-RED, Let's Encrypt, and more. 
 
 ---
 
 ## My Dashboard
 
-I am currently using a theme called [Mushroom](https://github.com/piitaya/lovelace-mushroom) in order to display my dashboard that is compatible on both my desktop and smartphone.
+I am currently using a theme called [Mushroom](https://github.com/piitaya/lovelace-mushroom) that allows me to use custom cards on my dashboard. This theme is very easy to setup and is meant to be viewed on both desktops and smartphones.
 
 ---
 
