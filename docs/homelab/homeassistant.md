@@ -32,12 +32,12 @@ As mentioned above, [integrations](https://www.home-assistant.io/integrations/) 
 
 ## My Dashboard
 
-I am currently using a theme called [Mushroom](https://github.com/piitaya/lovelace-mushroom) that allows me to use custom cards on my dashboard. This theme is very easy to setup and is meant to be viewed on both desktops and smartphones.
+I am currently using a theme called [Mushroom](https://github.com/piitaya/lovelace-mushroom) that allows me to use custom cards on my dashboard. This theme is very easy to setup and meant to be viewed on both desktops and smartphones. Follow this video to get a very similar dashboard to mine.
 
 ---
 
 ## Screenshots
 
 <div class="code-example">
-<img src="/assets/images/homeassistant_mobile.png" alt="Home Assistant Mobile Dashboard"> 
+<img src="/assets/images/homeassistant_mobile_small.png" alt="Home Assistant Mobile Dashboard"> 
 </div>
