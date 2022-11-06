@@ -36,7 +36,7 @@ The dashboard is a highly customizable view of all devices within an instance of
 
 <img src="/assets/images/homeassistant_mobile_small.png" alt="Home Assistant Mobile Dashboard">
 
-A very useful feature is the light counter at the top that allows me to monitor how many lights are on at any time. Also, the room icons are interactive and will change color if there is a light turned on in the room. This makes it easy to spot if a light is on in a roomt that nobody is in. Clicking on a room icon will take you to that room, making it easy to navigate and manage devices quickly. Also, each room has their 
+A very useful feature is the light counter at the top that allows me to monitor how many lights are on at any time. Also, the room icons are interactive and will change color if there is a light turned on in the room. This makes it easy to spot if a light is on in a room that nobody is in. Clicking on a room icon will take you to that room, making it easy to navigate and manage devices quickly. Also, each room has their 
 
 ---
 
