@@ -94,10 +94,10 @@ EXAMPLE: ssh2john id_rsa > forjohn.txt
 ## Steghide
 Used to embed data within data
   **embed**
-    - cf : specify the cover file (file used to embed data)
-    - ef : specify the embedded file (file that will be embedded)
+  - cf : specify the cover file (file used to embed data)
+  - ef : specify the embedded file (file that will be embedded)
   **extract**
-    - sf : specify a file to extract data from
+  - sf : specify a file to extract data from
 
 ```
 EXAMPLE: steghide embed -cf coverfile.jpg ef embedfile.txt
