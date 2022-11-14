@@ -32,7 +32,10 @@ exclude:
    - docs/aboutme.md
 
 # Set a path/url to a logo that will be displayed instead of the title
-logo: "/assets/images/logo.png" 
+# logo: "/assets/images/logo.png" 
+
+# Set color scheme to custom made theme
+color_scheme: blue
 
 # Enable or disable the site search
 # Supports true (default) or false
