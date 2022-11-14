@@ -7,6 +7,9 @@ nav_order: 5
 # Tool Notes
 {: .no_toc }
 
+
+{: .fs-6 .fw-300 }
+
 ## Table of contents
 {: .no_toc .text-delta }
 
@@ -93,10 +96,10 @@ EXAMPLE: ssh2john id_rsa > forjohn.txt
 
 ## Steghide
 Used to embed data within data
-  **embed**
+- **embed**
   - cf : specify the cover file (file used to embed data)
   - ef : specify the embedded file (file that will be embedded)
-  **extract**
+- **extract**
   - sf : specify a file to extract data from
 
 ```
