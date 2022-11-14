@@ -8,5 +8,5 @@ permalink: /docs/homelab
 
 # Homelab
 
-Read about how I configure applications and services running on my homelab network.
+Read about what applications and services I have running in my homelab and why I use them.
 {: .fs-6 .fw-300 }
