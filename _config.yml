@@ -34,9 +34,6 @@ exclude:
 # Set a path/url to a logo that will be displayed instead of the title
 # logo: "/assets/images/logo.png" 
 
-# Set color scheme to custom made theme
-color_scheme: blue
-
 # Enable or disable the site search
 # Supports true (default) or false
 search_enabled: true
@@ -89,7 +86,7 @@ back_to_top_text: "Back to top"
 footer_content: "If you have any questions, please feel free to contact me at robbiekoski@gmail.com"
 
 # Color scheme currently only supports "dark", "light"/nil (default), or a custom scheme that you define
-color_scheme: nil
+color_scheme: blue
 
 callouts_level: quiet # or loud
 callouts:
